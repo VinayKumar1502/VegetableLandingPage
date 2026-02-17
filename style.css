@@ -1,0 +1,123 @@
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.box2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 65%;
+    height: 60vh;
+    /* border:2px solid black; */
+    margin-left: 250px;
+    margin-top: 100px;
+}
+.b1{
+    background-color: rgb(212, 179, 16);
+    color: aliceblue;
+}
+.b2{
+    background-color: black;
+    color: aliceblue;
+}
+.About{
+    display: flex; 
+    justify-content: center;
+    margin-top: 100px;
+}
+.img3{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+/* .img7{
+    width: 1000px;
+    margin-left: 150px;
+} */
+.b3{
+    display: flex; justify-content: center;
+}
+.img4{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last{
+    display: flex;
+    justify-content: center;
+}
+.position{
+position: relative;
+}
+.img5{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    width: 60px;
+}
+.img6{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 60px;
+}
+.below{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    
+}
+.p1{
+    width: 80px;
+    height: 60px;
+   background-color: hsl(46, 96%, 50%);
+   position: absolute;
+   top: 295px;
+   left: 500px;
+}
+.p2{
+    width: 80px;
+    height: 60px;
+   background-color: hsl(46, 96%, 50%);
+   position: absolute;
+   top: 295px;
+   right: 100px;
+}
+.below2{
+    width: 400px;
+     height: 400px; 
+     margin-left: 200px;
+}
+.footer{
+    /* background-color: black; */
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    display: grid;
+    color: aliceblue;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+@media screen and (max-width:500){
+        .p1{
+    width: 30px;
+    height: 30px;
+   background-color: hsl(46, 96%, 50%);
+   position: absolute;
+   top: 295px;
+   left: 500px;
+    }
+        .p2{
+        width: 30px;
+        height: 30px;
+        background-color: hsl(46, 96%, 50%);
+        position: absolute;
+        top: 295px;
+        right: 100px;
+    }
+        .para{
+        font-size: 0.3rem;
+    }
+}
