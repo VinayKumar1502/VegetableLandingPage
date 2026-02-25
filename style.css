@@ -121,3 +121,266 @@ position: relative;
         font-size: 0.3rem;
     }
 }
+/* Add these styles to your existing style.css file */
+
+/* Responsive Design - Add this after your existing CSS */
+
+/* Tablets and small desktops */
+@media screen and (max-width: 992px) {
+    .box2 {
+        width: 90%;
+        margin-left: 5%;
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 30px;
+    }
+
+    .box2 div:first-child {
+        order: 2;
+    }
+
+    .box2 div:last-child {
+        order: 1;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+
+    .box2 h1 {
+        font-size: 3rem !important;
+    }
+
+    .card-group {
+        margin-left: 20px !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .col {
+        margin-bottom: 20px;
+    }
+
+    .below {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .below2 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 90% !important;
+    }
+
+    .col-6[style*="width: 400px"] {
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 768px) {
+    .box2 {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .box2 h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .box2 div[style*="margin-left: 5%"] {
+        margin-left: 0 !important;
+        padding: 0 15px;
+    }
+
+    .carousel-item img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .img3 img, .img4 img, .img7 img {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-group {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .col {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+        margin: 10px;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    /* Testimonial section */
+    #carouselExample.box2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .carousel-inner.col-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .carousel-item img {
+        width: 200px !important;
+        margin: 0 auto;
+    }
+
+    .col-6[style*="margin-left"] {
+        width: 100% !important;
+        padding: 0 15px;
+    }
+
+    .p1, .p2 {
+        width: 40px !important;
+        height: 40px !important;
+        top: 200px !important;
+    }
+
+    .p1 {
+        left: 20px !important;
+    }
+
+    .p2 {
+        right: 20px !important;
+    }
+
+    .para {
+        font-size: 1rem !important;
+    }
+
+    .img5, .img6 {
+        width: 40px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer h5, .footer h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .footer input {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Small mobile phones */
+@media screen and (max-width: 480px) {
+    .box2 h1 {
+        font-size: 2rem !important;
+    }
+
+    .box2 p {
+        font-size: 0.9rem;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .p1, .p2 {
+        width: 35px !important;
+        height: 35px !important;
+        top: 180px !important;
+    }
+
+    .img5, .img6 {
+        width: 30px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer h5 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Fix navbar for mobile */
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .box {
+        justify-content: center !important;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+}
+
+/* Fix card images */
+.card-img-top {
+    object-fit: contain;
+    height: 120px;
+}
+
+/* Improve button styles */
+.btn-lg {
+    margin: 5px;
+}
+
+/* Fix testimonial carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: hsl(46, 96%, 45%);
+}
+
+/* Fix map container */
+.ratio {
+    margin: 20px auto;
+}
+
+/* Improve form inputs */
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* Fix spacing */
+br {
+    display: none;
+}
+
+br + br {
+    display: block;
+}
